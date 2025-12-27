@@ -46,8 +46,22 @@ body {
   justify-content: space-between;
 }
 
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
 .nav-logo img {
   height: 32px;
+  filter: invert(1);
+}
+
+.nav-logo span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .nav-links {
