@@ -50,12 +50,10 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  text-decoration: none;
 }
 
 .nav-logo img {
-  height: 32px;
-  filter: invert(1);
+  height: 28px;
 }
 
 .nav-logo span {
@@ -345,6 +343,35 @@ body {
   color: var(--accent);
 }
 
+.download-email-option {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.download-email-option p {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.email-link-btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.email-link-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
 /* Footer */
 .footer {
   padding: 3rem 2rem;
@@ -377,6 +404,46 @@ body {
   color: var(--text);
 }
 
+/* Mobile/Desktop visibility */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+/* Mobile Download */
+.mobile-download-info {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.email-self-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.email-self-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.mobile-hint {
+  margin-top: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero {
@@ -401,5 +468,14 @@ body {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+
+  /* Show mobile section, hide desktop section */
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
   }
 }
