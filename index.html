@@ -12,19 +12,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">
-        <img src="assets/logo.png" alt="Bézier" height="32">
+        <img src="assets/logo-white.png" alt="Bézier" height="28">
         <span>Bézier</span>
       </a>
       <div class="nav-links">
         <a href="#features">Features</a>
-        <a href="#demo">Demo</a>
         <a href="https://github.com/BezierAI/monorepo" target="_blank">GitHub</a>
         <a href="#download" class="nav-cta">Download</a>
       </div>
@@ -43,8 +42,8 @@
         <a href="#download" class="button primary">
           Download for Mac
         </a>
-        <a href="#demo" class="button secondary">
-          See it in action
+        <a href="mailto:?subject=Download%20B%C3%A9zier%20for%20Mac&body=Here%27s%20the%20link%20to%20download%20B%C3%A9zier%3A%0A%0Ahttps%3A%2F%2Fbezierai.github.io%0A%0AOpen%20this%20on%20your%20Mac%20to%20get%20the%20app." class="button secondary">
+          Email Me the Link
         </a>
       </div>
     </div>
@@ -99,23 +98,14 @@
     </div>
   </section>
 
-  <!-- Demo -->
-  <section id="demo" class="demo">
-    <h2>See it in action</h2>
-    <div class="demo-container">
-      <div class="demo-placeholder">
-        <span>Demo GIF Coming Soon</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Download -->
-  <section id="download" class="download">
+  <div id="download"></div>
+  <!-- Download (Desktop) -->
+  <section class="download desktop-only">
     <h2>Download Bézier</h2>
     <p>Free and open source. Requires macOS 11.0 or later.</p>
 
     <div class="download-buttons">
-      <a href="https://github.com/BezierAI/monorepo/releases/latest/download/Bezier-0.1.0-arm64.dmg"
+      <a href="https://github.com/BezierAI/monorepo/releases/latest/download/Bezier-0.1.2-arm64.dmg"
          class="download-button primary">
         <span class="download-icon">⬇</span>
         <div>
@@ -124,7 +114,7 @@
         </div>
       </a>
 
-      <a href="https://github.com/BezierAI/monorepo/releases/latest/download/Bezier-0.1.0.dmg"
+      <a href="https://github.com/BezierAI/monorepo/releases/latest/download/Bezier-0.1.2-x64.dmg"
          class="download-button secondary">
         <span class="download-icon">⬇</span>
         <div>
@@ -137,6 +127,26 @@
     <p class="download-note">
       <a href="https://github.com/BezierAI/monorepo/releases">View all releases</a>
     </p>
+
+    <div class="download-email-option">
+      <p>Not on your Mac?</p>
+      <a href="mailto:?subject=Download%20B%C3%A9zier%20for%20Mac&body=Here%27s%20the%20link%20to%20download%20B%C3%A9zier%3A%0A%0Ahttps%3A%2F%2Fbezierai.github.io%0A%0AOpen%20this%20on%20your%20Mac%20to%20get%20the%20app." class="email-link-btn">
+        Email Me the Link
+      </a>
+    </div>
+  </section>
+
+  <!-- Download (Mobile) -->
+  <section class="download mobile-only">
+    <h2>Get Bézier on your Mac</h2>
+    <p>Bézier is a desktop app for macOS. Send yourself a reminder to download it later.</p>
+
+    <div class="mobile-download-info">
+      <a href="mailto:?subject=Download%20B%C3%A9zier%20for%20Mac&body=Here%27s%20the%20link%20to%20download%20B%C3%A9zier%3A%0A%0Ahttps%3A%2F%2Fbezierai.github.io%0A%0AOpen%20this%20on%20your%20Mac%20to%20get%20the%20app." class="email-self-btn">
+        Email Me the Link
+      </a>
+      <p class="mobile-hint">Opens your email app with the download link ready to send to yourself</p>
+    </div>
   </section>
 
   <!-- Footer -->
