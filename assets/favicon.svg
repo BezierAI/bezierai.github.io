@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <!-- White background with rounded corners -->
   <rect width="32" height="32" rx="6" fill="white"/>
-  <!-- Infinity symbol using stroke -->
-  <path d="M16 16 C16 12, 12 10, 9 10 C5 10, 4 14, 4 16 C4 18, 5 22, 9 22 C12 22, 16 20, 16 16 C16 12, 20 10, 23 10 C27 10, 28 14, 28 16 C28 18, 27 22, 23 22 C20 22, 16 20, 16 16" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Bezier curve trace -->
+  <path d="M5 24 Q13 4, 21 14 T27 6" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Control points -->
+  <circle cx="5" cy="24" r="2" fill="#6366f1"/>
+  <circle cx="27" cy="6" r="2" fill="#6366f1"/>
 </svg>
